@@ -1,0 +1,17 @@
+DTDs desarrollados:
+
+DTD para comunicacion PHP -> JAVA
+************************************
+<?xml version="1.0" standalone="yes'?>
+<!DOCTYPE id [
+    <!ELEMENT id (#PCDATA)>
+]>
+<id>50297</id>
+
+DTD para comunicacion JAVA -> PHP
+************************************
+<?xml version="1.0" standalone="yes'?>
+<!DOCTYPE codigo [
+    <!ELEMENT codigo (#PCDATA)>
+]>
+<codigo> HERE </codigo>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informacion Zaragoza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+    <script src="js/map.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="contenedor">
+    <div class="lateral">
+        <fieldset>
+            <legend>Llegar a una estacion de Bizi</legend>
+            <form name="formulario" method="post">
+                <div class="element">
+                    <input id="start" type="text" style="width: 320px" placeholder="Direccion de comienzo">
+                </div>
+                <div class="element">
+                    <select id="estacionesBizi" name="estacion">
+                    </select>
+                </div>
+                <div class="element2">
+                    <div class="element2">
+                        <input type="radio" name="extension" id="extension1" value="JSON">
+                        <label for="JSON">JSON</label>
+
+                        <input type="radio" name="extension" id="extension2" value="XML">
+                        <label for="XML">XML</label>
+                    </div>
+                </div>
+                <div class="element">
+                    <input type="button" onClick="calcRoute();" style="margin-left:110px;" value="Buscar ruta">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+    <div class="otrolado">
+        <fieldset>
+            <legend>Prevision meteorologica</legend>
+            <table border=1 align="center" cellspacing="0" style="width: 100%" class="tabla">
+                <tr>
+                    <td align="center" class="cabecera">Dia 1</td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="img/15.gif"></td>
+                </tr>
+                <tr>
+                    <td align="center"><font size="2">0%</font></td>
+                </tr>
+                <tr>
+                    <td align="center"><font size="2">1</font></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <font size="2" color="blue">7</font>
+                        <font size="2" color="black">/</font>
+                        <font size="2" color="red">18</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="img/N.gif"><br>15</td>
+                </tr>
+                <tr>
+                    <td align="center"><font size="2" class="temperaturas">&nbsp;&nbsp;8</font></td>
+                </tr>
+            </table>
+            <div class="element">
+                <select name="municipios">
+                    <option value="inicial" selected="selected">Selecciona un municipio</option>
+                    <option value="muni1">Zaragoza</option>
+                    <option value="muni2">Casetas</option>
+                </select>
+            </div>
+            <div class="element">
+                <input type="button" value="Obtener informacion meteorologica">
+            </div>
+        </fieldset>
+    </div>
+    <div class="principal">
+        <fieldset>
+            <legend>Google maps</legend>
+            <div id="googleMap">
+                <script src="js/map.js"></script>
+            </div>
+        </fieldset>
+    </div>
+</div>
+<div class="pie">
+    &#169; 2015 Alejandro Galvez y Sandra Campos
+</div>
+</body>
+</html>

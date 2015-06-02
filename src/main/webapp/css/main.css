@@ -1,0 +1,86 @@
+.contenedor
+{
+    text-align: left;
+	width:100%;
+	height: 100%;
+    margin: 1px;
+}
+.lateral
+{
+    width: 27%;
+	display: inline-block;
+	float:left;
+} 
+.otrolado
+{
+   	width: 25%;
+	display: inline-block;
+	float:right;
+} 
+.principal
+{
+    width: 48%;
+	display: inline-block;
+}
+.pie
+{
+    background-color: #cccccc; 
+    text-align:right; 
+    clear: both;
+	margin-top: 5%;
+}
+#googleMap
+{
+	width:600px;
+	height:600px;
+	display:block;
+	margin:0 auto 0 auto;
+}
+#botonControl
+{
+    font-size: 15px;
+    width: 200px;
+    margin-left: 20%;
+}
+.element
+{
+	margin-top: 10px;
+	margin-bottom: 30px !important;
+	margin-right:15%;
+}
+
+.element2
+{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-right:15%;
+	text-align:center;
+}
+
+.element img
+{
+	width:100%;
+}
+.tabla{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: small;
+}
+.cabecera
+{
+	background-color: #4F86D9;
+	color: #FFF;
+	text-align: center;
+	font-weight: normal;
+	vertical-align:middle;
+}
+.temperaturas
+{
+	background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c4_pred.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 24px;
+}
+.tabla td
+{
+	height:50px;
+}

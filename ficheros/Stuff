@@ -1,0 +1,32 @@
+- Framework php para soap: SoapClient
+- Usar metodo request y enviar peticion al webservice
+- Desde el webservice parsear
+- Devuelve String... -> body de soap contenido en el string -> Extraer xml de respuesta del body
+- Comprobar xml valido con PHP
+- Mostrar codigo HTML contenido en el XML
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+Ejemplo llamada ws con soap/axis
+
+	private static String callGenerarHTML(String localidad){
+		try {
+			Options options = new Options(new String[]{});
+
+			String endpointURL = options.getURL();
+
+			Service service = new Service();
+			Call call = (Call) service.createCall();
+			call.setTargetEndpointAddress(new java.net.URL(endpointURL));
+			call.setOperationName(new QName("WebServicesServer", "generarHTML"));
+
+			return (String) call.invoke(new Object[]{localidad});
+		}
+		catch (Exception e) {
+			System.err.println(e.toString());
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+//////////////////////////////////////////////////////////////////////////////////////////

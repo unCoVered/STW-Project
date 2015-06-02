@@ -1,0 +1,7 @@
+<deployment xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+    <service name="WebServicesServer" provider="java:RPC">
+    <parameter name="className" value="aemet.server.WebServicesServer"/>
+    <parameter name="allowedMethods" value="*"/>
+    </service>
+</deployment>
