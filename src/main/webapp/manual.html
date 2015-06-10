@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>VivaZaragoza</title>
+ 
+        <link rel="stylesheet" href="css/main.css">
+</head>
+ 
+<body>
+	
+	<header id="main-header">
+		
+		<a id="logo-header" href="index.php">
+			<span class="site-name">VivaZaragoza</span>
+			<span class="site-desc">La mejor informaci&oacute;n meteorol&oacute;gica y de bizis que podr&aacute;s encontrar</span>
+		</a> <!-- / #logo-header -->
+ 
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Estad&iacute;sticas</a>
+					<ul>
+						<li><a href="./controlEstadisticoSOAP.php">V&iacute;a SOAP</a></li>
+						<li><a href="./controlEstadistico.php">V&iacute;a REST</a></li>
+					</ul>
+				</li>
+				<li><a href="#">&#191;Problemas&#63;</a></li>
+				<!--<li><a href="#"><img src="estadisticas.png" alt="Estadisticas" height="66" width="66" style="margin-top:10px;"></a></li>-->
+			</ul>
+		</nav><!-- / nav -->
+ 
+	</header><!-- / #main-header -->
+ 
+	
+	<section id="main-content">
+	
+		<article>
+			<header>
+				<h1><br><br>Manual de usuario de VivaZaragoza</h1>
+			</header>
+			
+			<img src="http://www.gifmania.com.es/Deportes/Ciclismo/Bicicletas/Bicicleta-Rota-87394.gif" alt="BiciRota" 
+				style="margin-left:260px;"/>
+			
+			<div class="content">
+				<p>Aqui encontrar&aacute;s todos los errores m&aacute;s frecuentes que puede pasar con este servicio.</p>
+				<p>
+					<h2>Servicio Bizi</h2>
+					El servicio se compone de dos partes:<br>
+						• <u>Geolocalización de estaciones</u>: este componente se inicializa nada más ejecutar el servicio. Con él se pueden ver todas las estaciones bizi disponibles en todo Zaragoza y presionar en cada una para ver más información de ella. Será útil para poder crear rutas.<br>
+						• <u>Rutas</u>: poniendo una calle de Zaragoza e indicando una estación bizi de las disponibles se puede generar una ruta exacta de cómo llegar de la dirección escrita a la estación. Además, se puede elegir también si la ruta la queremos hacer en bici (o coche, que será la misma) o a pie. 
+				</p> 
+				<p>
+					<h2>Servicio meteorol&oacute;gico</h2>
+					El servicio meteorológico proporciona una información precisa y actual del tiempo en Zaragoza y los pueblos de la provincia. Utilizar este servicio es bastante sencillo: solo hace falta seleccionar el municipio del que queremos saber los datos e indicar si queremos que la información se descargue en XML o JSON. Al presionar el botón se obtendrá el resultado del tiempo que hemos solicitado.
+				</p> 
+				<p>
+					<h2>FAQ</h2>
+					<strong>Q: Hay iconos bizi que salen en negro.</strong>
+					<br><strong>A</strong>: Es la manera que el servicio tiene para indicar que no hay bicis disponibles en esa estación
+					<br><strong>Q: Ha salido un mensaje de "servicio no disponible" y no descarga las estaciones ni las marca en el mapa.</strong>
+					<br><strong>A</strong>: El sistema indica que ha habido un problema, lo más probable que de conexión. Habrá que comprobar que la conexión a internet está conectada y es correcta.
+					<br><strong>Q: El campo de texto de "dirección de comienzo" no encuentra mi calle.</strong>
+					<br><strong>A</strong>: Revise que ha escrito bien la calle, el servicio de localización de google no la encuentra.
+
+				</p>
+			</div>
+			
+		</article> <!-- /article -->
+	
+	</section> <!-- / #main-content -->
+ 
+	
+	
+	<footer id="main-footer">
+		<p>&copy; 2015 Alejandro G&aacute;lvez y Sandra Campos</p>
+	</footer> <!-- / #main-footer -->
+ 
+	
+</body>
+</html>

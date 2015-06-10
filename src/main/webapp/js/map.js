@@ -103,6 +103,11 @@ function calcRoute() {
     }
     else {
         var xmlhttp = new XMLHttpRequest();
+        var tipoRuta;
+        if(document.formulario.ruta[0].checked){
+            tipoRuta = google.maps.TravelMode.WALKING;
+        }
+        else tipoRuta = google.maps.TravelMode.DRIVING;
         if(document.formulario.extension[0].checked){
             /* La extension del fichero sera JSON */
             var url = "http://www.zaragoza.es/api/recurso/urbanismo-infraestructuras/" +
@@ -117,7 +122,7 @@ function calcRoute() {
                     var request = {
                         origin: start,
                         destination: end,
-                        travelMode: google.maps.TravelMode.DRIVING
+                        travelMode: tipoRuta
                     };
 
                     // Route the directions and pass the response to a
@@ -145,7 +150,7 @@ function calcRoute() {
                     var request = {
                         origin: start,
                         destination: end,
-                        travelMode: google.maps.TravelMode.DRIVING
+                        travelMode: tipoRuta
                     };
 
                     // Route the directions and pass the response to a
